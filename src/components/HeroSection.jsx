@@ -326,10 +326,10 @@ function HeroSection() {
   }, [currentIndex]);
   return (
     <>
-      <div className="Hero flex md:flex-row flex-col  bg-accent-300">
+      <div className="Hero flex md:flex-row flex-col  bg-accent-300 mt-[52px] ">
         <div className="container lg:max-w-7xl p-4  mx-auto md:mb-5 ">
           <div className='flex flex-col justify-center'>
-          <div className="ml-8 flex flex-row gap-2 mb-3 md:text-left text-center">
+          <div className="ml-8 flex flex-row gap-2 mb-3 md:text-left text-center justify-center md:justify-normal">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24"
@@ -354,7 +354,7 @@ function HeroSection() {
               Matrix Analysis and Mathematical Modelling
             </span>
           </h1>
-          <div className='ml-8 mt-4 flex md:flex-row flex-col md:gap-0 gap-3   rounded-full justify-around'>
+          <div className='md:ml-8 mt-4 flex md:flex-row flex-col md:gap-0 gap-3 rounded-full justify-around'>
             <a
               href="#"
               className="inline-flex justify-between items-center py-1 px-1 pr-4  text-sm text-accent-700 bg-accent-100 rounded-full "
@@ -390,7 +390,7 @@ Jalandhar
             </div>
           </div>
         </div>
-        <div className="w-3/4  flex-auto pt-5">
+        <div className="w-3/4  flex-auto pt-5 md:block hidden">
           <div className="h-4/6 w-5/6 m-auto  relative group ">
             <div className="slider">
               <div className="card"></div>

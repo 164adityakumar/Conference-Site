@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 const CountdownTimer = () => {
     const calculateTimeLeft = () => {
         const now = new Date();
-        const targetDate = '2024-12-27T23:59:59';
+        const targetDate = '2024-11-26T23:59:59';
 
         const difference = new Date(targetDate) - now;
 
@@ -33,25 +33,25 @@ const CountdownTimer = () => {
     });
 
     return (
-        < span className='flex text-xs gap-0.5 h-[45px] '>
-            <div className=' border-2 border-accent-500 rounded-md   p-0.75 w-10 text-center bg-slate-50'>
-                <div className='font-bold text-sm'>{timeLeft.days.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
-                <div> days</div>
+        < span className='flex text-xs gap-1.5  p-2 bg-accent-900 bg-opacity-90 rounded-full border-[3.5px] border-accent-50 border-dashed'>
+            <div className=' border-2 border-accent-300 rounded-full  px-2 py-0.6  text-center bg-accent-300'>
+                <div className='font-bold text-sm text-accent-900'>{timeLeft.days.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
+                <div className='text-accent-900'> days</div>
             </div>
             
-            <div className='border-2 rounded-md border-accent-500  p-0.75 w-10 bg-slate-50 text-center'>
-                <div className='font-bold text-sm ' >{timeLeft.hours.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
-                <div>hrs</div>
+            <div className=' border-2 border-accent-300 rounded-full  px-3 py-0.6  text-center bg-accent-300'>
+                <div className='font-bold text-sm text-accent-900'>{timeLeft.hours.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
+                <div className='text-accent-900'>hrs</div>
             </div>
             
-            <div className='border-2 rounded-md border-accent-500  p-0.75 w-10 bg-slate-50 text-center'>
-                <div className='font-bold text-sm'>{timeLeft.minutes.toLocaleString('en-US', { minimumIntegerDigits: 2 })}  </div>
-                <div> mins</div>
+            <div className=' border-2 border-accent-300 rounded-full  px-2 py-0.6  text-center bg-accent-300'>
+                <div className='font-bold text-sm text-accent-900'>{timeLeft.minutes.toLocaleString('en-US', { minimumIntegerDigits: 2 })}  </div>
+                <div className='text-accent-900'> mins</div>
             </div>
 
-            <div className='border-2 rounded-md border-accent-500 p-0.75 w-10 bg-slate-50 text-center'>
-                <div className='font-bold text-sm'>{timeLeft.seconds.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
-                <div> sec</div>
+            <div className=' border-2 border-accent-300 rounded-full  px-3 py-0.5  text-center bg-accent-300'>
+                <div className='font-bold text-sm text-accent-900'>{timeLeft.seconds.toLocaleString('en-US', { minimumIntegerDigits: 2 })} </div>
+                <div className='text-accent-900'> sec</div>
             </div>
 
             

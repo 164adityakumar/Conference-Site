@@ -24,9 +24,6 @@ function App() {
         <Route path="registration" element={<Registration />} />
         <Route path="committee" element={<Committee confid={confid} />} />
         <Route path="news/:newsid" element={<CommonNews /> } />
-
-
-
       </Routes >
     </>
   );

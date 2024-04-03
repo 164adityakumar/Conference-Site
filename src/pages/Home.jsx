@@ -20,9 +20,8 @@ function Home(props) {
     <div className="fixed top-0 w-screen z-40 ">
         <Navbar />
       </div>
+    <div className=" overscroll-none"><HeroSection confid={props.confId} />
       <SecNavbar />
-    
-      <HeroSection confid={props.confId} />
       <AboutNews confid={props.confId} />
       <Slider/>
       <Timeline confid={props.confId} />
@@ -30,7 +29,8 @@ function Home(props) {
       <OurEvents />
       <AboutNITJ/>
       <SponsorShip/>
-      <Footer />
+      <Footer /></div>
+      
       
     </>
   );

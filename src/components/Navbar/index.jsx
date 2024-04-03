@@ -42,14 +42,14 @@ useEffect(() => {
 }, [location.pathname]);
   return (
     <div>
-    <Disclosure as="header" className="bg-accent-200 shadow ">
+    <Disclosure as="header" className="  ">
       {({ open }) => (
         <>
           <div className="mx-auto  ">
-            <div className="relative px-2 sm:px-4 lg:px-8 flex h-14 bg-accent-500 justify-between items-center ">
+            <div className="relative px-2 sm:px-4 lg:px-8 flex h-14 bg-accent-300 justify-between items-center ">
               <div className="relative z-10 flex items-center lg:hidden ">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-accent-400 hover:text-accent-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-300">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-accent-700 hover:bg-accent-400 hover:text-accent-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-300">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open menu</span>
                   {open ? (
@@ -59,7 +59,7 @@ useEffect(() => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex items-center font-bold gap-4">
+              <div className="flex items-center font-bold gap-4 ">
                 <TopNavInfo
                   className="hidden md:flex"
                   icon={<PhoneIcon className="h-5 w-5" />}
@@ -75,7 +75,7 @@ useEffect(() => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="inline-flex items-center rounded-md py-2 px-2 text-xs text-white uppercase hover:bg-accent-400 font-semibold"
+                    className="inline-flex items-center rounded-md py-2 px-2 text-xs text-accent-800 uppercase hover:bg-accent-500 hover:text-accent-100 font-semibold"
                     aria-current={item.current ? "page" : undefined}
 
                   >

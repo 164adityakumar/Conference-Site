@@ -2,9 +2,9 @@
     display: flex;
   flex: 1;
   position: relative;
-  height: 90vh;
+  height: 95vh;
   width: 100%;
-  clip-path: circle(210vh at 50% -120vh); 
+  clip-path: circle(220vh at 50% -125vh); 
    padding: 2em;
   /* border-bottom-left-radius: 70% 100px;
   border-bottom-right-radius: 100% 70px; */

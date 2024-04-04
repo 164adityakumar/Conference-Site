@@ -1,5 +1,6 @@
 const Separator = () => {
-  return <hr className="mb-4 bg-amber-400 h-1 rounded-full max-w-xs" />;
+  return <hr className=" bg-accent-300
+  " />;
 };
 
 export default Separator;

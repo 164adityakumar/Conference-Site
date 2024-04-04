@@ -11,17 +11,7 @@ function AboutNITJ() {
                     About NITJ        </h2>
                 <Separator />
                 <p className="text-base text-justify font-sans font-base min-h-[216px] text-gray-800">
-                    Dr. B. R. Ambedkar NIT Jalandhar was established in the year
-                    1987 as erstwhile Regional Engineering College and was given
-                    the status of NIT Jalandhar by the Ministry of Human Resource
-                    Development, Government of India, New Delhi on October 17,
-                    2002 under the Act of Parliament-2007.As an Institute of National importance, NIT Jalandhar
-                    comprehends its responsibility of providing high quality education
-                    in Engineering and Technology to produce competent technical
-                    manpower for the country. The Institute offers UG, PG and
-                    research programmes with latest research infrastructure in all
-                    disciplines. Institute holds 46th NIRF ranking and within a ranking
-                    band of 651-700 amongst Asian Universities.
+                Dr B R Ambedkar National Institute of Technology, Jalandhar was established in the year 1987 as Regional Engineering College. The Institute was given the status of National Institute of Technology  by the Government of India on October 17, 2002 under the aegis of Ministry of Human Resource Development, New Delhi and has been declared as “Institute of National Importance” under the act of Parliament-2007. As National Institute of Technology, the Institute has a responsibility of providing high quality technical education in Engineering/Technology and Sciences to produce competent technical manpower and scientists  for the country..
                 </p>
 
             </div>

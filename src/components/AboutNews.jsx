@@ -9,21 +9,21 @@ function AboutNews(props) {
 
   const [isMouseOver, setIsMouseOver] = useState(false);
   const confid = props.confid;
-  const [data, setData] = useState(null)
+  // const [data, setData] = useState(null)
 
-  useEffect(() => {
-    axios.get(`${apiUrl}/conferencemodule/home/conf/${confid}`, {
-      withCredentials: true
+  // useEffect(() => {
+  //   axios.get(`${apiUrl}/conferencemodule/home/conf/${confid}`, {
+  //     withCredentials: true
 
-    })
-      .then(res => {
-        setData(res.data);
-        console.log(res.data);
+  //   })
+  //     .then(res => {
+  //       setData(res.data);
+  //       console.log(res.data);
 
-      })
-      .catch(err => console.log(err))
+  //     })
+  //     .catch(err => console.log(err))
 
-  }, []);
+  // }, []);
   const [newsData, setNewsData] = useState([]);
   useEffect(() => {
     axios.get(`${apiUrl}/conferencemodule/announcements/conf/${confid}`, {
@@ -53,21 +53,21 @@ function AboutNews(props) {
           The conference aims to bring together researchers, academicians, and practitioners from around the world to foster collaboration, share knowledge, and explore the latest advancements in the field of mathematics. With a focus on both theoretical and practical aspects, the conference provides a platform for discussing cutting-edge research, innovative methodologies, and real-world applications of mathematics.  The conference covers a wide range of topics, including but not limited to Algebra, Analysis, Mathematical Modelling, Matrix Analysis, Numerical Analysis, Differential Equations.
         </p></div>
         
-        <h2 className="text-4xl font-sans font-bold mt-4 text-gray-950  ">
+        {/* <h2 className="text-4xl font-sans font-bold mt-4 text-gray-950  ">
           About IICHE
         </h2>
         <Separator />
         <p className="text-base text-justify font-sans font-base text-gray-800">
           {data ? <div dangerouslySetInnerHTML={{ __html: data.aboutIns }} /> : " "}
-        </p>
+        </p> */}
       </div>
       <div className="sm:w-full md:w-[700px] sm:pr-6 lg:w-2/5 lg:ml-4 max-w-[700px] h-96 mt-10 sm:px-2 lg:mt-0 ml-5 md:mx-auto lg:px-5  ">
-        <h2 className="text-4xl font-sans font-bold text-gray-950 mb-3 lg:mb-4">News</h2>
+        <h2 className="text-4xl font-bold  text-accent-50 bg-accent-600 px-4 py-2 rounded-t-xl border-2 border-accent-600 shadow-xl shadow-accent-200 drop-shadow-xl">News</h2>
 
         <Separator />
         <div
           id="news"
-          className="h-[400px]  overflow-auto bg-amber-100  rounded-xl p-4 "
+          className="h-[400px]  overflow-auto bg-accent-100 rounded-b-xl p-4 border-2 border-accent-600 border-t-0"
         >
           <div
             className={`space-y-4  ${isMouseOver ? "animate-none cursor-default" : "animate-wiggle"
@@ -80,10 +80,10 @@ function AboutNews(props) {
             {newsData.map((item) => (
               <Link key={item._id} to={`/news/${item._id}`}>
 
-                <div className="relative p-4 my-4 rounded-xl hover:shadow-md hover:shadow-accent-600/50  bg-white space-y-4 border-solid border-2 border-amber-400">
+                <div className="relative my-4 rounded-xl hover:shadow-lg hover:shadow-accent-600/50 bg-white border-solid border-[3px] border-accent-500">
                   <div className="w-2 h-2 animate-ping bg-accent-600 absolute  -left-1 -top-1 rounded-full"></div>
-                  <p className="text-base font-medium  text-accent-600">{item.title}</p>
-                  <p className="text-sm font-sans  border-solid border-l-4 border-amber-400 pl-4  ">
+                  <p className="text-lg font-medium  text-accent-600 p-4 -mt-2 border-b-2 border-dashed border-accent-400">{item.title}</p>
+                  <p className="text-sm pt-4 p-4">
                     {item.metaDescription}
                   </p>
 

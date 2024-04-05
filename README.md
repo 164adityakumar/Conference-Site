@@ -1,7 +1,3 @@
-# Chemcon 2024
-
-Hello! This is the repository for the Chemcon 2024 website. This website is built using React. Here are some instructions on how to get started with the project.
-
 ## Enabling ESLint in VS Code
 
 ### Install the ESLint Extension for VS Code

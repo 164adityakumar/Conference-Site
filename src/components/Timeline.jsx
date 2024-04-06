@@ -1,38 +1,42 @@
-import Separator from "./common/Separator";
-import axios from "axios";
-import getEnvironment from "../getenvironment";
-import { useState, useEffect } from "react";
-import formatDate from "../utility/formatDate"
-export default function Timeline(props) {
-  const confid = props.confid;
-  const [datesData, setDatesData] = useState([]);
-  const apiUrl = getEnvironment();
-  useEffect(() => {
-    axios.get(`${apiUrl}/conferencemodule/eventDates/conference/${confid}`, {
-      withCredentials: true
+// import Separator from "./common/Separator";
+// import axios from "axios";
+// import getEnvironment from "../getenvironment";
+// import { useState, useEffect } from "react";
+// import formatDate from "../utility/formatDate"
+import "./Timeline.css"
 
-    })
-      .then(res => {
-        setDatesData(res.data);
-        console.log(res.data);
+export default function Timeline() {
+  // const confid = props.confid;
+  // const [datesData, setDatesData] = useState([]);
+  // const apiUrl = getEnvironment();
+  // useEffect(() => {
+  //   axios.get(`${apiUrl}/conferencemodule/eventDates/conference/${confid}`, {
+  //     withCredentials: true
 
-      })
-      .catch(err => console.log(err))
+  //   })
+  //     .then(res => {
+  //       setDatesData(res.data);
+  //       console.log(res.data);
 
-  }, []);
+  //     })
+  //     .catch(err => console.log(err))
 
-  return (
-    <div className=" container max-w-7xl flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start mx-auto px-5 sm:px-10 py-16 lg:px-8 lg:py-16">
-      <div className="w-full lg:w-3/5 md:max-w-[700px] pr-4">
+  // }, []);
 
-        <div className="text-center">
-          <h2 className="text-4xl font-black mb-4">Timeline</h2>
+  return (<>
+    <div className="text-center w-full">
+          <h2 className="text-4xl text-accent-50 font-bold  mb-4 bg-accent-800 w-full mt-28 py-2">TIMELINE</h2>
 
           <h3 className="text-xl font-medium leading-relaxed text-gray-800 lg:w-2/3 mx-auto">
 
           </h3>
         </div>
-        <div className="relative py-5">
+    <div className=" container max-w-7xl flex flex-col items-center lg:flex-row lg:justify-evenly lg:items-start mx-auto px-5 sm:px-10 py-16 lg:px-8 lg:py-16 border-b-4 border-accent-500">
+      
+      <div className="w-full lg:w-3/5 md:max-w-[800px] items-center sm:-ml-20 pl-10 sm:pl-0">
+
+        
+        {/* <div className="relative py-5">
           <div
             className="w-10 md:w-12 absolute top-0 left-0 bottom-0 flex flex-col justify-center lg:left-1/2 lg:-ml-6"
             aria-hidden="true"
@@ -85,11 +89,37 @@ export default function Timeline(props) {
 
             ))}
           </ul>
-        </div>
+        </div> */}
+
+<ol className="w-[70vw] sm:flex ">
+      <ListItem
+        version="November 15, 2024"
+        date=""
+        description="●	Last date of abstract Submission "
+      />
+      <ListItem
+        version="November 20, 2024"
+        date=""
+        description="●	Notification for the acceptance of abstract  "
+      />
+      <ListItem
+        version="November 10, 2024"
+        date=""
+        description="●	Last date for online registration  "
+      />
+      {/* <ListItem
+        version="November 29, 2024"
+        date=""
+        description="●	Conference Starts from now onwards " 
+
+      /> */}
+    </ol>
+
+
       </div>
 
-      <div className="w-full md:w-[700px] lg:w-2/5 px-4 lg:px-0   mt-10 lg:mt-0 mx-auto lg:pl-5 lg:mx-0 ">
-        <h2 className="text-4xl font-sans font-bold text-gray-950 mb-3 lg:mb-4">About Doaba Regional Centre (DRC)
+      {/* <div classNameName="w-full md:w-[700px] lg:w-2/5 px-4 lg:px-0   mt-10 lg:mt-0 mx-auto lg:pl-5 lg:mx-0 ">
+        <h2 classNameName="text-4xl font-sans font-bold text-gray-950 mb-3 lg:mb-4">About Doaba Regional Centre (DRC)
         </h2>
         <Separator />
         <p className="text-base text-justify font-sans font-base text-gray-800">
@@ -104,7 +134,29 @@ export default function Timeline(props) {
           Examination since 1960 and publishes an esteemed quarterly
           Journal “The Indian Chemical Engineer” since 1959..
         </p>
-      </div>
+      </div> */}
     </div>
+    </>
   );
 }
+
+const ListItem = ({ version, date, description }) => {
+  return (
+    <li className="relative mb-6 sm:mb-0">
+      <div className="flex items-center">
+        <div className="z-10 flex items-center justify-center w-6 h-6 bg-accent-100 rounded-full ring-0 ring-white dark:bg-accent-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+          <svg className="w-2.5 h-2.5 text-accent-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+          </svg>
+        </div>
+        <div className="hidden sm:flex w-full bg-accent-200 h-0.5 dark:bg-gray-700"></div>
+      </div>
+      <div className="mt-3 sm:pe-7">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{version}</h3>
+        <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"> {date}</time>
+        <p className="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+      </div>
+    </li>
+    
+  );
+};

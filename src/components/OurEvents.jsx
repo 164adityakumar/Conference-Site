@@ -5,60 +5,31 @@ const data = [
     title: "Technical Sessions",
     content:
     `
-  <p >
-    Technical Sessions will focus on the theme of the Congress and
-    the following broad themes will be covered with interaction through
-    Plenary Sessions, Invited Lectures, Paper Presentations and
-    Poster Sessions. There will be three best paper awards each in
-    Oral and Poster presentations in each session. Award will be
-    given to the top two papers presented in each session in both Oral
-    and Poster presentations. The following topics but not limited to
-    are to be covered:
-    <ul >
-      <li >Chemical Process Safety Management</li>  <li> Green Technology
-      </li>
-      <li>Novel Separation Techniques
-      </li> <li>New and Renewable Energy </li>
-      <li>Sustainable Development </li>
-      <li>Hydrocarbon and other fossil fuels</li>
-      <li>Energy and Environmental Policy Issues</li>
-      <li>Modelling, Simulation and Scale-up</li>
-      <li> Nanotechnology </li>
-      <li>Process Development</li>
-      <li>Chemical and Fertilizer Technology</li>
-      <li>Nuclear and Thermal Power</li>
-      <li> Chemical Engineering in the New Century</li>
-      <li> Agrochemical Technology</li>
-      <li>Membrane Separation Processes</li>
-      <li>Mining and Mineral</li>
-      
-
-    </ul>
-  </p>`,
+  `,
     bg: "bg-accent-100",
   },
   {
-    title: "Sri Dhirubhai Ambani Commemoration Day",
+    title: "",
     content:
-      "Shri Dhirubhai Ambani Commemoration day will be celebrated on December 28, 2024 as a tribute to the great visionary.",
+      "",
     bg: "bg-accent-200",
   },
   {
-    title: "International Symposium",
+    title: "",
     content:
-      "International Joint Symposiums related to the theme will be held as part of CHEMCON 2024",
+      "",
     bg: "bg-accent-300",
   },
   {
-    title: "Exhibition",
+    title: "",
     content:
-      "An exhibition of Chemical Engineering and allied businesses including safety, technology providers, consultants, institution, tour packages and communication, Equipment, Instruments, Books and Journals, etc. is proposed during CHEMCON 2024. Interested organizations will be allotted space of the following dimensions in the form of exhibition stalls with all facilities like furniture, power, etc. ",
+      "",
     bg: "bg-accent-400 text-white",
   },
   {
-    title: "Quiz Competition",
+    title: "",
     content:
-      "Quiz Competition will be conducted for the student delegates    based on GATE 2024 syllabus. The prize will be distributed to the   winners.",
+      "",
     bg: "bg-accent-500 text-white",
   },
   // {
@@ -78,7 +49,7 @@ function OurEvents() {
   
   return (
 
-    <div className="container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 md:mb-1 ">
+    <div className="container space-y-8 lg:max-w-7xl mx-auto px-8 sm:px-10 lg:px-8 md:mb-1 mt-10">
       <div className="text-center">
         <h2 className="text-4xl font-bold mb-5">Our Events</h2>
       </div>

@@ -63,11 +63,11 @@ useEffect(() => {
                 <TopNavInfo
                   className="hidden md:flex"
                   icon={<PhoneIcon className="h-5 w-5" />}
-                  value="+91-9888895253"
+                  value="+91-9XXXXXXXXXX"
                 />
                 <TopNavInfo
                   icon={<EnvelopeIcon className="h-5 w-5" />}
-                  value="chemcon2024@gmail.com"
+                  value="XXXXXXXXXX@gmail.com"
                 />
               </div>
               <nav className="hidden lg:flex" aria-label="Global">

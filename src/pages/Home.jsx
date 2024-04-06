@@ -5,9 +5,9 @@ import HeroSection from "../components/HeroSection";
 import Footer from "../components/Footer";
 import AboutNITJ from "../components/AboutNITJ";
 import AboutNews from "../components/AboutNews";
-import SponsorShip from "../components/Sponsorship";
+// import SponsorShip from "../components/Sponsorship";
 import { useEffect } from "react";
-import Slider from "../components/Slider";
+// import Slider from "../components/Slider";
 import SecNavbar from "../components/SecNavbar";
 import Navbar from "../components/Navbar"
 // import AboutNews from "./components/Dummy";
@@ -23,12 +23,12 @@ function Home(props) {
     <div className=" overscroll-none"><HeroSection confid={props.confId} />
       <SecNavbar />
       <AboutNews confid={props.confId} />
-      <Slider/>
+      {/* <Slider/> */}
       <Timeline confid={props.confId} />
       {/* <Speakers /> */}
       <OurEvents />
       <AboutNITJ/>
-      <SponsorShip/>
+      {/* <SponsorShip/> */}
       <Footer /></div>
       
       

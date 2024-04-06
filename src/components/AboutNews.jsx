@@ -48,7 +48,7 @@ function AboutNews(props) {
         </h2>
         <Separator />
         <div className=" border-dashed border-accent-700 border-2 bg-accent-50 rounded-b-xl border-t-0 ">
-        <p className="text-base text-justify font-base text-accent-900 p-4 ">
+        <p className="text-lg text-justify font-base text-accent-900 p-4  ">
           {/* {data ? <div className="min-h-[216px]" dangerouslySetInnerHTML={{ __html: data.aboutConf }} /> : <div className="min-h-[216px]"></div>} */}
           The conference aims to bring together researchers, academicians, and practitioners from around the world to foster collaboration, share knowledge, and explore the latest advancements in the field of mathematics. With a focus on both theoretical and practical aspects, the conference provides a platform for discussing cutting-edge research, innovative methodologies, and real-world applications of mathematics.  The conference covers a wide range of topics, including but not limited to Algebra, Analysis, Mathematical Modelling, Matrix Analysis, Numerical Analysis, Differential Equations.
         </p></div>

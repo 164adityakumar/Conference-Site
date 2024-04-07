@@ -1,11 +1,11 @@
 import { Disclosure } from "@headlessui/react";
 import {
   Bars3Icon,
-  EnvelopeIcon,
-  PhoneIcon,
+  // EnvelopeIcon,
+  // PhoneIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import TopNavInfo from "./TopNavInfo";
+// import TopNavInfo from "./TopNavInfo";
 import {  Link } from "react-router-dom";
 // import CountdownTimer from "../CountdownTimer";
 import { useState,useEffect } from "react";
@@ -45,8 +45,8 @@ useEffect(() => {
     <Disclosure as="header" className="  ">
       {({ open }) => (
         <>
-          <div className="mx-auto  ">
-            <div className="relative px-2 sm:px-4 lg:px-8 flex h-14 bg-accent-300 justify-between items-center ">
+          <div className="mx-auto">
+            <div className="relative px-2 sm:px-4 lg:px-8 flex  bg-accent-300 md:justify-center justify-between items-center ">
               <div className="relative z-10 flex items-center lg:hidden ">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-accent-700 hover:bg-accent-400 hover:text-accent-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-300">
@@ -59,7 +59,7 @@ useEffect(() => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex items-center font-bold gap-4 ">
+              {/* <div className="flex items-center font-bold gap-4 ">
                 <TopNavInfo
                   className="hidden md:flex"
                   icon={<PhoneIcon className="h-5 w-5" />}
@@ -68,21 +68,21 @@ useEffect(() => {
                 <TopNavInfo
                   icon={<EnvelopeIcon className="h-5 w-5" />}
                   value="XXXXXXXXXX@gmail.com"
-                />
-              </div>
-              <nav className="hidden lg:flex" aria-label="Global">
+                /> */}
+              {/* </div> */}
+              <div className="hidden md:flex" aria-label="Global">
                 {currentNavigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="inline-flex items-center rounded-md py-2 px-2 text-xs text-accent-800 uppercase hover:bg-accent-500 hover:text-accent-100 font-semibold"
+                    className="inline-flex items-center py-5 px-2 text-xs text-accent-800 uppercase hover:bg-accent-500 hover:text-accent-100 font-bold"
                     aria-current={item.current ? "page" : undefined}
 
                   >
                     {item.name}
                   </Link>
                 ))}
-              </nav>
+              </div>
             </div>
             {/* <div
               className="hidden  lg:flex px-2 sm:px-4 lg:px-8 lg:space-x-8 lg:py-3"
